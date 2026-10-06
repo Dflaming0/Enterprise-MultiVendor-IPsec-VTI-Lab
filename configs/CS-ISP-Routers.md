@@ -1,5 +1,7 @@
 # Cisco ISP Routers Configuration
 
+---
+
 ## CS-ISP-HQ
 
 ### 1. Interface & Network Setup
@@ -35,17 +37,18 @@ ip nat inside source list 101 interface GigabitEthernet0/1 overload
 ip route 0.0.0.0 0.0.0.0 192.168.123.1
 ip route 10.0.0.0 255.255.0.0 10.0.2.1
 ip route 10.1.0.0 255.255.0.0 192.168.123.201
+```
 
-CS-ISP-BR1
-1. Interface & Network Setup
+---
 
-    Gi0/0 (WAN1-BR1): 10.1.2.254/24 — NAT Inside
+## CS-ISP-BR1
 
-    Gi0/1 (WAN / pnet1): 192.168.123.201/24 — NAT Outside (Upstream Cloud)
+### 1. Interface & Network Setup
+* **Gi0/0** (WAN1-BR1): `10.1.2.254/24` — NAT Inside
+* **Gi0/1** (WAN / pnet1): `192.168.123.201/24` — NAT Outside (Upstream Cloud)
 
-2. Configuration Commands
-Cisco CLI
-
+### 2. Configuration Commands
+```cisco
 ! Interface NAT Assignments
 interface GigabitEthernet0/0
  ip nat inside
@@ -65,3 +68,4 @@ ip nat inside source list 101 interface GigabitEthernet0/1 overload
 ip route 0.0.0.0 0.0.0.0 192.168.123.1
 ip route 10.0.0.0 255.255.0.0 192.168.123.200
 ip route 10.1.0.0 255.255.0.0 10.1.2.1
+```
