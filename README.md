@@ -1,5 +1,13 @@
 # Enterprise-MultiVendor-IPsec-VTI-Lab
 
+## Overview
+This repository documents a comprehensive, multi-vendor network security laboratory built in EVE-NG. The goal isn't just to connect a few routers, but to simulate a realistic enterprise infrastructure with headquarters and remote branches, focusing on secure routing, IPsec VPNs, and firewall administration. 
+
+## Current Progress & Roadmap
+- [x] **Check Point R81.20 (Gateway & Management)**: Full setup, Route-Based VPN (VTI), OSPF over IPsec, NAT, and Security Policies.
+- [ ] **Fortinet / pfSense**: Planned for branch expansions to test multi-vendor IPsec compatibility.
+- [ ] **WEB & Mail Servers**: Planned deployment in the DMZ. This involves diving into application-layer security, configuring Apache/Nginx, and setting up SQL databases to simulate real-world vulnerable and secure services.
+
 | VM / Device | Port | Zone | IP Address | Comment |
 | :--- | :--- | :--- | :--- | :--- |
 | **EVE-NG Cloud** | `pnet1` | WAN | `192.168.123.1/24` | Upstream Lab GW / Internet |
@@ -35,3 +43,4 @@
 | **PFS-GW-BR2** | `eth0` | WAN-BR2 | `10.2.2.1/24` | pfSense Gateway [Future] |
 | | `eth1` | USR-BR2 | `192.168.120.254/24` | Branch 2 Users Zone [Future] |
 | **Linux-BR2** | `eth0` | USR-BR2 | `192.168.120.1/24` | Branch 2 User PC [Future] |
+
