@@ -1,9 +1,5 @@
 # Cisco ISP Routers Configuration
 
-This document outlines the baseline routing, NAT, and Access Control List (ACL) configurations for the ISP emulation layer.
-
----
-
 ## CS-ISP-HQ
 
 ### 1. Interface & Network Setup
@@ -40,9 +36,15 @@ ip route 0.0.0.0 0.0.0.0 192.168.123.1
 ip route 10.0.0.0 255.255.0.0 10.0.2.1
 ip route 10.1.0.0 255.255.0.0 192.168.123.201
 
----
+CS-ISP-BR1
+1. Interface & Network Setup
 
-## CS-ISP-BR1
+    Gi0/0 (WAN1-BR1): 10.1.2.254/24 — NAT Inside
+
+    Gi0/1 (WAN / pnet1): 192.168.123.201/24 — NAT Outside (Upstream Cloud)
+
+2. Configuration Commands
+Cisco CLI
 
 ! Interface NAT Assignments
 interface GigabitEthernet0/0
