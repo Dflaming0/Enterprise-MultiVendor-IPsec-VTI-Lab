@@ -3,8 +3,18 @@
 ## Overview
 This repository documents a comprehensive, multi-vendor network security laboratory built in EVE-NG. The goal isn't just to connect a few routers, but to simulate a realistic enterprise infrastructure with headquarters and remote branches, focusing on secure routing, IPsec VPNs, and firewall administration. 
 
+## Tools & Technologies
+
+[![Check Point](https://img.shields.io/badge/Check_Point-R81.20-red?style=for-the-badge&logo=checkpoint&logoColor=white)](https://www.checkpoint.com/)
+[![Cisco](https://img.shields.io/badge/Cisco-IOS-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)](https://www.cisco.com/)
+[![EVE-NG](https://img.shields.io/badge/EVE--NG-Lab_Emulation-orange?style=for-the-badge)](https://www.eve-ng.net/)
+
+[![pfSense](https://img.shields.io/badge/pfSense-Firewall-212529?style=for-the-badge&logo=pfsense&logoColor=white)](https://www.pfsense.org/)
+[![Linux](https://img.shields.io/badge/Linux-Server-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.kernel.org/)
+[![Active Directory](https://img.shields.io/badge/Active_Directory-Windows_Server-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://microsoft.com)
 ## Current Progress & Roadmap
 - [x] **Check Point R81.20 (Gateway & Management)**: Full setup, Route-Based VPN (VTI), OSPF over IPsec, NAT, and Security Policies.
+- [ ] **Kali Linux**: Full pentest DDOS, Port Scanning, Reverse Shell, Brute Force. 
 - [ ] **Fortinet / pfSense**: Planned for branch expansions to test multi-vendor IPsec compatibility.
 - [ ] **WEB & Mail Servers**: Planned deployment in the DMZ. This involves diving into application-layer security, configuring Apache/Nginx, and setting up SQL databases to simulate real-world vulnerable and secure services.
 
