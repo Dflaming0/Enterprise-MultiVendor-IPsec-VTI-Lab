@@ -13,8 +13,7 @@ This repository documents a comprehensive, multi-vendor network security laborat
 [![Linux](https://img.shields.io/badge/Linux-Server-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.kernel.org/)
 [![Active Directory](https://img.shields.io/badge/Active_Directory-Windows_Server-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://microsoft.com)
 ## Current Progress & Roadmap
-- [x] **Check Point R81.20 (Gateway & Management)**: Full setup, Route-Based VPN (VTI), OSPF over IPsec, NAT, and Security Policies.
-- [ ] **Kali Linux**: Full pentest DDOS, Port Scanning, Reverse Shell, Brute Force. 
+- [x] **Check Point R81.20 (Gateway & Management)**: Full setup, Route-Based VPN (VTI), OSPF over IPsec, NAT, and Security Policies. 
 - [ ] **Fortinet / pfSense**: Planned for branch expansions to test multi-vendor IPsec compatibility.
 - [ ] **WEB & Mail Servers**: Planned deployment in the DMZ. This involves diving into application-layer security, configuring Apache/Nginx, and setting up SQL databases to simulate real-world vulnerable and secure services.
 

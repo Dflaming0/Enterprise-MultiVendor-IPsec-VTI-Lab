@@ -3,7 +3,7 @@
 This section covers the real-world issues encountered during the lab deployment and the logic behind their resolution.
 
 ### 1. L3 Connectivity for SIC via ISP (Routing & NAT)
-* **The Issue:** The Security Management Server (SMS) sits at `192.168.2.1` behind the HQ gateway. The Branch gateway is external (`10.0.3.0/24`). The ISP routers in the lab only knew about the public `10.0.0.0/24` pool and had no routes to internal `192.168.x.x` subnets.
+* **The Issue:** The Security Management Server (SMS) sits at `192.168.2.1` behind the HQ gateway. The Branch gateway is external (`10.1.2.0/24`). The ISP routers in the lab only knew about the public `10.0.0.0/24` pool and had no routes to internal `192.168.x.x` subnets.
 * **The Mistake:** I initially tried to route SMS traffic using Hide NAT on the HQ gateway. Secure Internal Communication (SIC) established at first, but this created a routing black hole that ruined future policy installations.
 
 ### 2. Policy Install Failure on TCP 18191 (Management IP vs NAT)
